@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <nav class="sticky">
+        <div id="nav_items">
+            <div id="title">
+                Visulization
+            </div>
+            <div>
+                <a href="#" class="link">Dashboard</a>
+                <a href="#regions_div" class="link">GeoMap</a>
+                <a href="#line_chart_cp" class="link">Top Regions & Pestles</a>
+                <a href="#line_chart" class="link">Events Timeline</a>
+                <a href="#sector" class="link">Top Sectors</a>
+                <a href="#heatmap" class="link">Topic vs Intensity vs Likelihood vs Relevance</a>
+            </div>
+            <button id="refresh">Refresh Data</button>
+        </div>
+    </nav>
+    <main>
+        <div id="filters-container">
+            <label for="end-year-filter">End Year:</label>
+            <select id="end-year-filter"></select>
+
+            <label for="sector-filter">Sector:</label>
+            <select id="sector-filter"></select>
+
+            <label for="topics-filter">Topics:</label>
+            <select id="topics-filter"></select>
+
+            <label for="region-filter">Region:</label>
+            <select id="region-filter"></select>
+
+            <label for="pest-filter">PEST:</label>
+            <select id="pest-filter"></select>
+
+            <label for="swot-filter">SWOT:</label>
+            <select id="swot-filter"></select>
+
+            <label for="country-filter">Country:</label>
+            <select id="country-filter"></select>
+
+            <label for="city-filter">City:</label>
+            <select id="city-filter"></select>
+        </div>
+        <div id="table-container">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th id="columns">End Year</th>
+                        <th>City Longitude</th>
+                        <th>City Latitude</th>
+                        <th>Intensity</th>
+                        <th>Sector</th>
+                        <th>Topic</th>
+                        <th>Insight</th>
+                        <th>SWOT</th>
+                        <th>URL</th>
+                        <th>Region</th>
+                        <th>Start Year</th>
+                        <th>Impact</th>
+                        <th>Added</th>
+                        <th>Published</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Relevance</th>
+                        <th>PESTLE</th>
+                        <th>Source</th>
+                        <th>Title</th>
+                        <th>Likelihood</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="pages">
+            <div id="pagination" class="pagination"></div>
+        </div>
+    </main>
+    <main id="map">
+        <div id="regions_div"></div>
+        <div id="line_chart_cp">
+            <canvas id="country_project_chart" style="height: 50%; width: 100%;"></canvas>
+            <canvas id="pestle_chart" style="height: 50%; width: 100%;"></canvas>
+        </div>
+    </main>
+    <main>
+        <div id="horizotal-pie">
+            <div>
+                <div id="line_chart">
+                    <canvas id="start_year_chart" style="height: 50%; width: 100%;"></canvas>
+                    <canvas id="end_year_chart" style="height: 50%; width: 100%;"></canvas>
+                </div>
+            </div>
+            <div id="sector_pie">
+                <div id="sector"></div>
+            </div>
+        </div>
+        <div id="heatmap"></div>
+    </main>
+
+    <script type="module" src="js/sector.js"></script>
+    <script type="module" src="js/start_year.js"></script>
+    <script type="module" src="js/end_year.js"></script>
+    <script type="module" src="js/countries_and_project.js"></script>
+    <script type="module" src="js/region_projects.js"></script>
+    <script type="module" src="js/pestle.js"></script>
+    <script type="module" src="js/heatmap.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
+    <script type="module" src="js/refreshData.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: relative;
+    background: #7f68ac;
+    color: white;
+    z-index: 10;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#title {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 7vh;
+    margin-left: 1vh;
+}
+
+#nav_items {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    height: 7vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-left: 4vh;
+    margin-right: .5vh;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgba(144, 238, 144, 1);
+    background-color: rgba(0, 0, 0, 0); 
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: rgb(30, 147, 44);
+    box-shadow: 0 0 0 1px rgb(30, 147, 44);
+    color: white;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin-left: 3.5vh;
+}
+
+.link:hover{
+    color: rgb(247, 255, 154);
+}
+#map {
+    margin: 2vh;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#regions_div:hover {
+    box-shadow: 0 0 0 5px #5edfc5
+}
+
+#regions_div {
+    overflow: hidden;
+    height: 650px;
+    width: 1050px;
+    border-radius: 10px;
+    border: 1px solid #5edfc5;
+    margin-right: 2vh;
+}
+
+#sector {
+    border-radius: 10px;
+    border: .5px solid #9d56db;
+    height: 70vh;
+}
+
+#sector:hover {
+    box-shadow: 0 0 0 5px #9d56db
+}
+
+#line_chart_cp {
+    padding: 2vh;
+    width: 30vw;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 99, 132, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+#line_chart_cp:hover {
+    box-shadow: 0 0 0 5px rgba(255, 99, 132, 1);
+}
+
+#line_chart {
+    overflow: hidden;
+    height: 74vh;
+    width: 48vw;
+    border-radius: 10px;
+    border: .5px solid rgba(255, 206, 86, 1);
+    margin: 0 0 2vh 2vh;
+}
+
+#line_chart:hover {
+    box-shadow: 0 0 0 5px rgba(255, 206, 86, 1);
+}
+
+#horizotal-pie {
+    display: flex;
+    gap: 2vh;
+}
+
+#sector,
+#start_year_chart,
+#end_year_chart {
+    padding: 2vh;
+}
+
+#heatmap {
+    height: 96vh;
+    margin: 0 2vh 2vh 2vh;
+    border-radius: 10px;
+    border: 1px solid rgb(84, 182, 212);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heatmap:hover {
+    box-shadow: 0 0 0 5px rgb(84, 182, 212)
+}
+
+.bg {
+    background-color: rgb(159, 159, 159);
+}
+
+.js-plotly-plot .plotly .modebar {
+    display: none;
+}
+
+#table-container {
+    width: 97vw;
+    max-width: 100%;
+    margin: 2vh;
+    margin-top: 0;
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid #f96161;
+    background-color: #ee67678c;
+}
+
+#table-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+#table-container::-webkit-scrollbar-thumb {
+    background-color: #f961619f;
+    border-radius: 10px;
+}
+
+#table-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    table-layout: fixed;
+}
+
+#table-container:hover {
+    box-shadow: 0 0 0 5px #f96161;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 9px;
+    text-align: left;
+    line-height: 1.2;
+    max-height: 2.4em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+th {
+    text-align: center;
+    color: white;
+    background-color: #f96161;
+    border: 1px solid #f96161;
+}
+
+#pages {
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px 2vh 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination-button:hover {
+    background-color: #45a049;
+    color: white;
+    box-shadow: 0 0 0 2px #27d9b4
+}
+
+.pagination-active {
+    background-color: #1e7c23;
+}
+
+#filters-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+    margin-top: 9vh;
+    border-radius: 10px;
+    align-items: center;
+    padding: 1.5vh;
+    border: 1px solid #7f68ac;
+    background-color: #ac95da84;
+}
+
+.filter {
+    margin-right: 10px;
+}
+
+select {
+    border-radius: 6px;
+    padding: 2px;
+}
