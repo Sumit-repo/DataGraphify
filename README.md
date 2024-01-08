@@ -2,6 +2,13 @@
 
 DataGraphify is a powerful Java-based software solution that seamlessly converts data from CSV files into compelling visualizations and charts. With an intuitive interface, it efficiently stores data in databases before generating dynamic JSON files. These files serve as the backbone for creating stunning dashboards and visual representations in web technologies. Whether you're a data enthusiast, analyst, or developer, DataGraphify empowers you to craft meaningful insights and unlock the potential within your datasets with ease. Turn raw data into a visual narrative and make informed decisions effortlessly with DataGraphify.
 
+## Screenshots
+
+![Home Page](https://github.com/Sumit-repo/DataGraphify/assets/52080842/988a2b6b-4ddf-4d82-a3a2-1c1805e6987a)
+![Demographic Representation](https://github.com/Sumit-repo/DataGraphify/assets/52080842/ac5129cf-39ae-43fa-8ac8-d17c666c8849)
+![Graphical Representation](https://github.com/Sumit-repo/DataGraphify/assets/52080842/1aa4256e-fc28-491e-a739-0e9bc3f2d0c1)
+
+
 ## Features
 
 - **CSV to Database:** Efficiently stores data from CSV files into a database for easy retrieval and manipulation.
