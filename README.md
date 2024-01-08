@@ -36,29 +36,31 @@ DataGraphify is a powerful Java-based software solution that seamlessly converts
 
 1. Clone the repository: `git clone https://github.com/yourusername/DataGraphify.git`
 2. Install dependencies using
-   `<dependency>
+   ```bash
+        <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>8.0.33</version>
-        </dependency>`
-
-        `<dependency>
+        </dependency>
+   
+        <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
             <version>5.7.1</version>
-        </dependency>`
-
-        `<dependency>
+        </dependency>
+   
+        <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.13.0</version>
-        </dependency>`
-
-        `<dependency>
+        </dependency>
+   
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>3.2.1</version>
-        </dependency> `
+        </dependency>
+   ```
 4. Navigate to the project directory: `cd DataGraphify`
 5. Compile the Java code: `javac FetchingDatasForJSON.java`
 6. Run the application: `java FetchingDatasForJSON.java`
